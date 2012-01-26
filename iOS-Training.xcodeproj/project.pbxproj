@@ -27,6 +27,7 @@
 		4D213B2A14D08EA000C244AA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4D213B2814D08EA000C244AA /* InfoPlist.strings */; };
 		4D213B2C14D08EA000C244AA /* iOS_TrainingTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 4D213B2B14D08EA000C244AA /* iOS_TrainingTests.h */; };
 		4D213B2E14D08EA000C244AA /* iOS_TrainingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D213B2D14D08EA000C244AA /* iOS_TrainingTests.m */; };
+		4D213B3814D0949000C244AA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D213B3714D0948F00C244AA /* CoreLocation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		4D213B2914D08EA000C244AA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4D213B2B14D08EA000C244AA /* iOS_TrainingTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOS_TrainingTests.h; sourceTree = "<group>"; };
 		4D213B2D14D08EA000C244AA /* iOS_TrainingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_TrainingTests.m; sourceTree = "<group>"; };
+		4D213B3714D0948F00C244AA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D213B3814D0949000C244AA /* CoreLocation.framework in Frameworks */,
 				4D213AF314D08EA000C244AA /* UIKit.framework in Frameworks */,
 				4D213AF514D08EA000C244AA /* Foundation.framework in Frameworks */,
 				4D213AF714D08EA000C244AA /* CoreGraphics.framework in Frameworks */,
@@ -115,6 +118,7 @@
 		4D213AF114D08EA000C244AA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4D213B3714D0948F00C244AA /* CoreLocation.framework */,
 				4D213AF214D08EA000C244AA /* UIKit.framework */,
 				4D213AF414D08EA000C244AA /* Foundation.framework */,
 				4D213AF614D08EA000C244AA /* CoreGraphics.framework */,

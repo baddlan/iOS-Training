@@ -17,10 +17,48 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // Setup CoreLocation, set maximum accuracy with all possible results and start listening for
+    // location changes.
+    locationManager = [[CLLocationManager alloc] init];
+    [locationManager setDelegate:self];
+    
+    [locationManager setDistanceFilter:kCLDistanceFilterNone];
+    [locationManager setDesiredAccuracy:kCLLocationAccuracyBest];
+    [locationManager startUpdatingLocation];
+    
     // Override point for customization after application launch.
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+- (void)locationManager:(CLLocationManager *)manager
+    didUpdateToLocation:(CLLocation *)newLocation 
+           fromLocation:(CLLocation *)oldLocation
+{
+    NSLog(@"Location: %@", newLocation);
+}
+
+- (void)locationManager:(CLLocationManager *)manager
+       didFailWithError:(NSError *)error
+{
+    NSLog(@"Error: %@", error);
+}
+
+- (BOOL)locationManagerShouldDisplayHeadingCalibration:(CLLocationManager *)manager
+{
+    return YES;
+}
+
+- (void)locationManager:(CLLocationManager *)manager 
+       didUpdateHeading:(CLHeading *)newHeading
+{
+    NSLog(@"Heading: %@", newHeading);
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */ 
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

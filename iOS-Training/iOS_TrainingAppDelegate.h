@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface iOS_TrainingAppDelegate : NSObject <UIApplicationDelegate>
+@interface iOS_TrainingAppDelegate : NSObject <UIApplicationDelegate, CLLocationManagerDelegate>
+{
+    CLLocationManager *locationManager;
+}
+
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 

@@ -8,10 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
+#import <MapKit/MapKit.h>
 
 @interface iOS_TrainingAppDelegate : NSObject <UIApplicationDelegate, CLLocationManagerDelegate>
 {
     CLLocationManager *locationManager;
+    
+    IBOutlet MKMapView *worldView;
+    IBOutlet UIActivityIndicatorView *activityIndicator;
+    IBOutlet UITextField *locationnTitleField;
 }
 
 

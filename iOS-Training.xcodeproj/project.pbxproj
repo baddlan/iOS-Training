@@ -29,6 +29,7 @@
 		4D213B2E14D08EA000C244AA /* iOS_TrainingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D213B2D14D08EA000C244AA /* iOS_TrainingTests.m */; };
 		4D213B3814D0949000C244AA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D213B3714D0948F00C244AA /* CoreLocation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		4D213B3A14D2246B00C244AA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D213B3914D2246B00C244AA /* MapKit.framework */; };
+		4D213B3D14D34F0300C244AA /* MapPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D213B3C14D34F0000C244AA /* MapPoint.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		4D213B2D14D08EA000C244AA /* iOS_TrainingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_TrainingTests.m; sourceTree = "<group>"; };
 		4D213B3714D0948F00C244AA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		4D213B3914D2246B00C244AA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		4D213B3B14D34EFF00C244AA /* MapPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPoint.h; sourceTree = "<group>"; };
+		4D213B3C14D34F0000C244AA /* MapPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPoint.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +140,8 @@
 			children = (
 				4D213B0314D08EA000C244AA /* iOS_TrainingAppDelegate.h */,
 				4D213B0414D08EA000C244AA /* iOS_TrainingAppDelegate.m */,
+				4D213B3B14D34EFF00C244AA /* MapPoint.h */,
+				4D213B3C14D34F0000C244AA /* MapPoint.m */,
 				4D213B0614D08EA000C244AA /* iOS_Training.xcdatamodeld */,
 				4D213B0914D08EA000C244AA /* iPhone */,
 				4D213B1014D08EA000C244AA /* iPad */,
@@ -305,6 +310,7 @@
 				4D213B0814D08EA000C244AA /* iOS_Training.xcdatamodeld in Sources */,
 				4D213B0C14D08EA000C244AA /* iOS_TrainingAppDelegate_iPhone.m in Sources */,
 				4D213B1314D08EA000C244AA /* iOS_TrainingAppDelegate_iPad.m in Sources */,
+				4D213B3D14D34F0300C244AA /* MapPoint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,7 +10,7 @@
 #import <CoreLocation/CoreLocation.h>
 #import <MapKit/MapKit.h>
 
-@interface iOS_TrainingAppDelegate : NSObject <UIApplicationDelegate, CLLocationManagerDelegate>
+@interface iOS_TrainingAppDelegate : NSObject <UIApplicationDelegate, CLLocationManagerDelegate, MKMapViewDelegate, UITextFieldDelegate>
 {
     CLLocationManager *locationManager;
     
